@@ -35,6 +35,14 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
+## Each time change prisma schema types
+
+Run below command to push the changes
+```bash
+npx prisma migrate reset
+npx prisma generate
+npx prisma db push
+```
 
 ## Check prisma
 

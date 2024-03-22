@@ -29,15 +29,14 @@ The live url: [https://discord-clone-production-0cac.up.railway.app](https://dis
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-  <img src="images/chat.png" alt="Logo" width="400px">
-  <img src="images/search.png" alt="Logo" width="400px">
-  <img src="images/invite.png" alt="Logo" width="400px">
-<div style="display: flex; justify-content: flex-start;"width="400px">
-  <img src="images/mobile-chat.png" alt="Mobile Chat" style="margin-right: 5px;" height="350px">
-  <img src="images/mobile-sidebar.png" alt="Mobile Sidebar" style="margin-left: 5px;" height="350px">
+  <img src="images/chat.png" alt="Logo" width="900px">
+  <img src="images/search.png" alt="Logo" width="900px">
+  <img src="images/invite.png" alt="Logo" width="900px">
+  Mobile view: 
+<div style="display: flex; justify-content: flex-start;" width="900px">
+  <img src="images/mobile-chat.png" alt="Mobile Chat" style="margin-right: 5px; margin-top: 15px;" height="600px">
+  <img src="images/mobile-sidebar.png" alt="Mobile Sidebar" style="margin-left: 5px; margin-top: 15px;" height="600px">
 </div>
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 ### Built With
@@ -49,8 +48,6 @@ The live url: [https://discord-clone-production-0cac.up.railway.app](https://dis
 * Tailwind
 * MySQL
 * Shadcn
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
@@ -110,29 +107,27 @@ Node version 18.x.x
 npm run dev
 ```
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 <!-- ROADMAP -->
 ## Features
 
-- [ ] Real-time messaging using Socket.io
-- [ ] Send attachments as messages using UploadThing
-- [ ] Delete & Edit messages in real time for all users
-- [ ] Create Text, Audio and Video call Channels
-- [ ] 1:1 conversation between members
-- [ ] 1:1 video calls between members
-- [ ] Member management (Kick, Role change Guest / Moderator)
-- [ ] Unique invite link generation & full working invite system
-- [ ] Infinite loading for messages in batches of 10 (tanstack/query)
-- [ ] Server creation and customization
-- [ ] Beautiful UI using TailwindCSS and ShadcnUI
-- [ ] Full responsivity and mobile UI
-- [ ] Light / Dark mode
-- [ ] Websocket fallback: Polling with alerts
-- [ ] ORM using Prisma
-- [ ] MySQL database using Planetscale
-- [ ] Authentication with Clerk
+- [X] Real-time messaging using Socket.io
+- [X] Send attachments as messages using UploadThing
+- [X] Delete & Edit messages in real time for all users
+- [X] Create Text, Audio and Video call Channels
+- [X] 1:1 conversation between members
+- [X] 1:1 video calls between members
+- [X] Member management (Kick, Role change Guest / Moderator)
+- [X] Unique invite link generation & full working invite system
+- [X] Infinite loading for messages in batches of 10 (tanstack/query)
+- [X] Server creation and customization
+- [X] Beautiful UI using TailwindCSS and ShadcnUI
+- [X] Full responsivity and mobile UI
+- [X] Light / Dark mode
+- [X] Websocket fallback: Polling with alerts
+- [X] ORM using Prisma
+- [X] MySQL database using Planetscale
+- [X] Authentication with Clerk
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

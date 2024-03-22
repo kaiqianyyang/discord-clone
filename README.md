@@ -1,53 +1,138 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Discord Clone
+<a name="readme-top"></a>
 
+This is a repository for Fullstack Discord Clone implemented with Next.js 13, React, Socket.io, Prisma, Tailwind, MySQL.
+
+The live url: [https://discord-clone-production-0cac.up.railway.app](https://discord-clone-production-0cac.up.railway.app)
+
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+        <li><a href="#run-the-app">Run</a></li>
+      </ul>
+    </li>
+    <li><a href="#features">Features</a></li>
+  </ol>
+</details>
+
+<!-- ABOUT THE PROJECT -->
+## About The Project
+  <img src="images/chat.png" alt="Logo" width="400px">
+  <img src="images/search.png" alt="Logo" width="400px">
+  <img src="images/invite.png" alt="Logo" width="400px">
+<div style="display: flex; justify-content: flex-start;"width="400px">
+  <img src="images/mobile-chat.png" alt="Mobile Chat" style="margin-right: 5px;" height="350px">
+  <img src="images/mobile-sidebar.png" alt="Mobile Sidebar" style="margin-left: 5px;" height="350px">
+</div>
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+### Built With
+
+* Next.js 13
+* React
+* Socket.io
+* Prisma
+* Tailwind
+* MySQL
+* Shadcn
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+<!-- GETTING STARTED -->
 ## Getting Started
 
-First, run the development server:
+This is an example of how you may give instructions on setting up your project locally.
+To get a local copy up and running follow these simple example steps.
 
-```bash
+### Prerequisites
+
+Node version 18.x.x
+
+### Installation
+
+1. Clone the repo
+   ```sh
+   git clone https://github.com/github_username/repo_name.git
+   ```
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
+3. Setup .env file
+   ```js
+    NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+    CLERK_SECRET_KEY=
+    NEXT_PUBLIC_CLERK_SIGN_IN_URL=
+    NEXT_PUBLIC_CLERK_SIGN_UP_URL=
+    NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=
+    NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=
+
+
+    DATABASE_URL=
+
+    UPLOADTHING_SECRET=
+    UPLOADTHING_APP_ID=
+
+    LIVEKIT_API_KEY=
+    LIVEKIT_API_SECRET=
+    NEXT_PUBLIC_LIVEKIT_URL=
+   ```
+4. Setup Prisma
+    ```sh
+    // initiate and update database
+    npx prisma migrate reset
+    npx prisma generate
+    npx prisma db push
+    
+    // check database
+    npx prisma studio 
+    ```
+    
+### Run the App
+
+```sh
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+<!-- ROADMAP -->
+## Features
 
-## Learn More
+- [ ] Real-time messaging using Socket.io
+- [ ] Send attachments as messages using UploadThing
+- [ ] Delete & Edit messages in real time for all users
+- [ ] Create Text, Audio and Video call Channels
+- [ ] 1:1 conversation between members
+- [ ] 1:1 video calls between members
+- [ ] Member management (Kick, Role change Guest / Moderator)
+- [ ] Unique invite link generation & full working invite system
+- [ ] Infinite loading for messages in batches of 10 (tanstack/query)
+- [ ] Server creation and customization
+- [ ] Beautiful UI using TailwindCSS and ShadcnUI
+- [ ] Full responsivity and mobile UI
+- [ ] Light / Dark mode
+- [ ] Websocket fallback: Polling with alerts
+- [ ] ORM using Prisma
+- [ ] MySQL database using Planetscale
+- [ ] Authentication with Clerk
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-
-## Each time change prisma schema types
-
-Run below command to push the changes
-```bash
-npx prisma migrate reset
-npx prisma generate
-npx prisma db push
-```
-
-## Check prisma
-
-Run below command to see Prisma Studio on http://localhost:5555:
-
-```bash
-npx prisma studio
-```
+<p align="right">(<a href="#readme-top">back to top</a>)</p>

@@ -30,9 +30,9 @@ The live url: [https://discord-clone-production-0cac.up.railway.app](https://dis
 <!-- ABOUT THE PROJECT -->
 ## About The Project
   <img src="images/chat.png" alt="Logo" width="900px">
-  <img src="images/search.png" alt="Logo" width="900px">
-  <img src="images/invite.png" alt="Logo" width="900px">
-  Mobile view: 
+  <!-- <img src="images/search.png" alt="Logo" width="900px">
+  <img src="images/invite.png" alt="Logo" width="900px"> -->
+  <img src="images/audio-chat.png" alt="Logo" width="900px">
 <div style="display: flex; justify-content: flex-start;" width="900px">
   <img src="images/mobile-chat.png" alt="Mobile Chat" style="margin-right: 5px; margin-top: 15px;" height="600px">
   <img src="images/mobile-sidebar.png" alt="Mobile Sidebar" style="margin-left: 5px; margin-top: 15px;" height="600px">
